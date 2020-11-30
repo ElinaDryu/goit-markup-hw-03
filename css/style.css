@@ -1,0 +1,348 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-color-black: #212121;
+  --main-color-grey: #757575;
+  --accent-color-blue: #2196f3;
+  --secondary-color-black: #000000;
+  --accent-color-white: #ffffff;
+  --secondary-color-white-transparence: rgb(255, 255, 255, 0.6);
+  --btn-hover-color: #188ce8;
+  --footer-bcg: #2f303a;
+  --header-bcg: #ffffff;
+  --team-bcg: #f5f4fa;
+  --portfolio-bcg-btn-color: #f5f4fa;
+  --portfolio-bcg-cards-color: #eeeeee;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+/* ========== COMPONENTS ========== */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.active-page {
+  color: var(--accent-color-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0%;
+}
+
+ul {
+  margin: 0%;
+  padding: 0%;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1600px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* ========== END COMPONENTS ========== */
+
+/* ============================================== MAIN PAIGE =========================================================== */
+
+/* ========== HEADER ========== */
+
+header {
+  background: var(--header-bcg);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.site-nav-items {
+  display: flex;
+}
+.contacts {
+  display: flex;
+}
+
+.nav-adress {
+  margin-left: auto;
+}
+
+.header .logo {
+  margin-right: 93px;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  color: var(--secondary-color-black);
+  text-decoration: none;
+
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+.logo-wrap {
+  color: var(--accent-color-blue);
+}
+
+.site-nav-link {
+  text-decoration: none;
+  color: var(--main-color-black);
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color-blue);
+}
+.contacts {
+  font-style: normal;
+}
+.site-nav-contacts {
+  color: var(--main-color-grey);
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  text-decoration: none;
+}
+.site-nav-contacts:hover,
+.site-nav-contacts:focus {
+  color: var(--accent-color-blue);
+}
+
+/* ========== END HEADER ========== */
+
+/* ========== FOOTER ========== */
+
+footer {
+  background-color: var(--footer-bcg);
+}
+.footer-items {
+  font-style: normal;
+}
+.footer-contacts {
+  font-family: var(--main-font);
+  color: var(--secondary-color-white-transparence);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+.logo-footer {
+  color: var(--accent-color-white);
+}
+.map {
+  color: var(--accent-color-white);
+}
+
+/* ========== END FOOTER ========== */
+
+/* ========== HERO ========== */
+
+.hero {
+  background: var(--footer-bcg);
+}
+
+.hero-text {
+  font-family: var(--main-font);
+  font-weight: 900;
+  color: var(--accent-color-white);
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  background-color: var(--accent-color-blue);
+  color: var(--accent-color-white);
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-family: var(--main-font);
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--btn-hover-color);
+  color: var(--accent-color-white);
+  cursor: pointer;
+}
+
+/* ========== END HERO ========== */
+
+/* ========== ADVANTAGES ========== */
+
+.advantages {
+  background: var(--header-bcg);
+}
+.advantages-items-title {
+  color: var(--main-color-black);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantages-items-text {
+  color: var(--main-color-grey);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+/* ========== END ADVANTAGES ========== */
+
+/* ========== ACTIVITY ========== */
+
+.activity {
+  background: var(--header-bcg);
+}
+
+.activity-title {
+  color: var(--main-color-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+}
+/* ========== END ACTIVITY ========== */
+
+/* ========== TEAM ========== */
+
+.team {
+  background: var(--team-bcg);
+}
+.team-subtitle {
+  background: var(--header-bcg);
+}
+
+.team-title {
+  color: var(--main-color-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+}
+
+.team-name {
+  color: var(--main-color-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+}
+.team-prof {
+  color: var(--main-color-grey);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+}
+
+/* ========== END TEAM ========== */
+/* ============================================== END MAIN PAIGE =========================================================== */
+
+/* ============================================== PORTFOLIO ===============================================================*/
+
+/* ========== BTN PORTFOLIO ========== */
+.filters-btn {
+  background: var(--portfolio-bcg-btn-color);
+  color: var(--main-color-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  font-family: var(--main-font);
+  cursor: pointer;
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  background: var(--accent-color-blue);
+  color: var(--accent-color-white);
+}
+
+/* ========== END BTN PORTFOLIO ========== */
+
+/* ==========  PORTFOLIO EXAMPLES========== */
+.portfolio-examples {
+  background: var(--portfolio-bcg-cards-color);
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-title {
+  color: var(--main-color-black);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  color: var(--main-color-grey);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
+/* ========== END PORTFOLIO EXAMPLES========== */
