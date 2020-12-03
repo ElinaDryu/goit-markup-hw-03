@@ -171,6 +171,11 @@ header {
 footer {
   background-color: var(--footer-bcg);
 }
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-items {
   font-style: normal;
   display: block;
@@ -202,10 +207,6 @@ footer {
   color: var(--accent-color-white);
 }
 
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 /* ========== END FOOTER ========== */
 
 /* ========== HERO ========== */
